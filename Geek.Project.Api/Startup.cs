@@ -1,5 +1,6 @@
 using Autofac;
 using Geek.Project.Api.Enums;
+using Geek.Project.Api.Logs;
 using Geek.ProjectCore.Common.Configs;
 using Geek.ProjectCore.Common.Helpers;
 using Geek.ProjectCore.Db.Extensions;
@@ -40,6 +41,13 @@ namespace Geek.Project.Api
             //数据库
             services.AddDb(_env).Wait();
             services.AddControllers();
+
+            #region 操作日志
+            if (_appConfig.Log.Operation)
+            {
+                services.AddSingleton<ILogHandler, LogHandler>();
+            }
+            #endregion
 
             #region Swagger Api文档
 
@@ -135,6 +143,9 @@ namespace Geek.Project.Api
             });
 
             #endregion
+
+            //阻止NLog接收状态消息
+            services.Configure<ConsoleLifetimeOptions>(opts => opts.SuppressStatusMessages = true);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

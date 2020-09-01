@@ -33,5 +33,38 @@
             V2 版本
             </summary>
         </member>
+        <member name="T:Geek.Project.Api.Logs.ApiHelper">
+            <summary>
+            Api帮助类
+            </summary>
+        </member>
+        <member name="P:Geek.Project.Api.Logs.ApiHelperDto.Label">
+            <summary>
+            接口名称
+            </summary>
+        </member>
+        <member name="P:Geek.Project.Api.Logs.ApiHelperDto.Path">
+            <summary>
+            接口地址
+            </summary>
+        </member>
+        <member name="T:Geek.Project.Api.Logs.ILogHandler">
+            <summary>
+            操作日志处理接口
+            </summary>
+        </member>
+        <member name="M:Geek.Project.Api.Logs.ILogHandler.LogAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            写操作日志
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Geek.Project.Api.Logs.LogHandler">
+            <summary>
+            操作日志处理
+            </summary>
+        </member>
     </members>
 </doc>

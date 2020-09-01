@@ -1,7 +1,6 @@
 ﻿using Geek.Project.Repository.System;
 using Geek.Project.Service.DTO.System.SysRole;
 using Geek.ProjectCore.DTO.Output;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Geek.Project.Service.System
