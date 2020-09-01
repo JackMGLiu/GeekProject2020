@@ -1,0 +1,7 @@
+{
+  //数据库类型 MySql = 0, SqlServer = 1, PostgreSQL = 2, Oracle = 3, Sqlite = 4, OdbcOracle = 5, OdbcSqlServer = 6, OdbcMySql = 7, OdbcPostgreSQL = 8, Odbc = 9, OdbcDameng = 10, MsAccess = 11
+  //同步结构
+  "syncStructure": false,
+  "type": 0,
+  "connectionString": "Server=140.143.7.32; port=3306; Database=GeekRightDb; uid=root; pwd=123qweASD"
+}
