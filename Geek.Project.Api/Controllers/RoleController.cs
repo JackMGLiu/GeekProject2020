@@ -26,5 +26,16 @@ namespace Geek.Project.Api.Controllers
         {
             return await _sysRoleService.GetAsync(id);
         }
+
+        /// <summary>
+        /// 查询多条角色
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("list")]
+        public async Task<IResponseOutput> GetList(string name)
+        {
+            return await _sysRoleService.GetAsyncByWhere(name);
+        }
     }
 }

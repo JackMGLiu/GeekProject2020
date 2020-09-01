@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Geek.Project.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Geek.Project.Api.Controllers.RoleController.Get(System.String)">
+            <summary>
+            查询单条角色
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Geek.Project.Api.Controllers.RoleController.GetList(System.String)">
+            <summary>
+            查询多条角色
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Geek.Project.Api.Enums.ApiVersion">
+            <summary>
+            接口版本
+            </summary>
+        </member>
+        <member name="F:Geek.Project.Api.Enums.ApiVersion.V1">
+            <summary>
+            V1 版本
+            </summary>
+        </member>
+        <member name="F:Geek.Project.Api.Enums.ApiVersion.V2">
+            <summary>
+            V2 版本
+            </summary>
+        </member>
+    </members>
+</doc>

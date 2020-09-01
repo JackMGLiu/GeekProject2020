@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Geek.Project.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Geek.Project.Domain.System.SysRole">
+            <summary>
+            角色实体
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\Geek.Project.Api\Geek.Project.Service.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Geek.ProjectCore.DTO\Geek.ProjectCore.DTO.csproj" />
     <ProjectReference Include="..\Geek.ProjectCore.Repository\Geek.Project.Repository.csproj" />
