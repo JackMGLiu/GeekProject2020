@@ -1,4 +1,5 @@
-﻿using Geek.Project.Repository.System;
+﻿using Geek.Project.Domain.System;
+using Geek.Project.Repository.System;
 using Geek.Project.Service.DTO.System.SysRole;
 using Geek.ProjectCore.DTO.Output;
 using System.Threading.Tasks;
@@ -23,6 +24,12 @@ namespace Geek.Project.Service.System
         public async Task<IResponseOutput> GetAsyncByWhere(string roleName)
         {
             var result = await sysRoleRepository.Where(r => r.RoleName.Contains(roleName)).ToListAsync<RoleGetOutput>();
+            return ResponseOutput.Ok(result, "查询成功");
+        }
+
+        public async Task<IResponseOutput> GetDataByKey(string key)
+        {
+            var result = await sysRoleRepository.GetRoles(key);
             return ResponseOutput.Ok(result, "查询成功");
         }
     }

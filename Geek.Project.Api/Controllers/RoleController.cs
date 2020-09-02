@@ -24,7 +24,8 @@ namespace Geek.Project.Api.Controllers
         [HttpGet]
         public async Task<IResponseOutput> Get(string id)
         {
-            return await _sysRoleService.GetAsync(id);
+            // return await _sysRoleService.GetAsync(id);
+            return await _sysRoleService.GetDataByKey(id);
         }
 
         /// <summary>

@@ -4,5 +4,17 @@
         <name>Geek.Project.Repository</name>
     </assembly>
     <members>
+        <member name="T:Geek.Project.Repository.System.ISysRoleRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Geek.Project.Repository.System.ISysRoleRepository.GetRoles(System.String)">
+            <summary>
+            根据主键查询角色信息
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
