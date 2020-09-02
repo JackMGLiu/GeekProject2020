@@ -8,7 +8,8 @@ namespace Geek.Project.Repository.System
     {
         public SysRoleRepository(UnitOfWorkManager uowm) : base(uowm)
         {
-
+            
         }
+
     }
 }

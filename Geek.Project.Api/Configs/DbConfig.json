@@ -3,5 +3,5 @@
   //同步结构
   "syncStructure": false,
   "type": 0,
-  "connectionString": "Server=140.143.7.32; port=3306; Database=GeekRightDb; uid=root; pwd=123qweASD"
+  "connectionString": "Data Source=140.143.7.32;Port=3306;User ID=root;Password=123qweASD; Initial Catalog=GeekRightDb;Charset=utf8; SslMode=none;Min pool size=5"
 }
